@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartScreen">
+   <children>
+      <Button fx:id="saveAddPartButton" layoutX="400.0" layoutY="445.0" mnemonicParsing="false" onAction="#saveAddToPartsList" prefHeight="26.0" prefWidth="82.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="48.0" layoutY="48.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Button fx:id="cancelAddPartButton" layoutX="516.0" layoutY="445.0" mnemonicParsing="false" onAction="#toFirstScreen" prefHeight="26.0" prefWidth="82.0" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="inHouseRadioButton" layoutX="252.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="In-House">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="partSourceToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="outsourcedRadioButton" layoutX="386.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="Outsourced" toggleGroup="$partSourceToggle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="partIDLabel" layoutX="84.0" layoutY="134.0" text="ID" />
+      <Label fx:id="partNameLabel" layoutX="84.0" layoutY="178.0" prefHeight="18.0" prefWidth="51.0" text="Name" />
+      <Label fx:id="partStockLabel" layoutX="84.0" layoutY="222.0" prefHeight="18.0" prefWidth="109.0" text="Stock" />
+      <Label fx:id="partPriceLabel" layoutX="84.0" layoutY="268.0" text="Price/Cost" />
+      <Label fx:id="partMaxLabel" layoutX="84.0" layoutY="315.0" text="Max" />
+      <Label fx:id="partMachineIDLabel" layoutX="84.0" layoutY="362.0" text="Machine ID" />
+      <TextField fx:id="partIDTxt" disable="true" editable="false" layoutX="236.0" layoutY="130.0" promptText="Auto-Gen Disabled" />
+      <TextField fx:id="partNameTxt" layoutX="236.0" layoutY="174.0" />
+      <TextField fx:id="partStockTxt" layoutX="236.0" layoutY="218.0" />
+      <TextField fx:id="partPriceTxt" layoutX="236.0" layoutY="267.0" />
+      <TextField fx:id="partMaxTxt" layoutX="236.0" layoutY="311.0" />
+      <TextField fx:id="partMachineIDTxt" layoutX="236.0" layoutY="355.0" />
+      <TextField fx:id="partMinTxt" layoutX="516.0" layoutY="311.0" />
+      <Label fx:id="partMinLabel" layoutX="461.0" layoutY="315.0" text="Min" />
+   </children>
+</AnchorPane>
