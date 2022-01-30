@@ -7,12 +7,13 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstScreen">
    <children>
-      <Label layoutX="27.0" layoutY="25.0" prefHeight="60.0" prefWidth="354.0" text="Inventory Management System">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#007faa" height="600.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#005982" height="350.0" layoutX="27.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="561.0" />
+      <Label layoutX="27.0" layoutY="25.0" prefHeight="60.0" prefWidth="478.0" text="Inventory Management System" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="350.0" layoutX="27.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="561.0" />
       <Button fx:id="addPartButton" layoutX="264.0" layoutY="404.0" mnemonicParsing="false" onAction="#toAddPartScreen" prefHeight="39.0" prefWidth="73.0" text="Add">
          <font>
             <Font size="14.0" />
@@ -36,11 +37,11 @@
             <TableColumn fx:id="partPrice" prefWidth="157.0" text="Price/Cost Per Unit" />
         </columns>
       </TableView>
-      <Label layoutX="35.0" layoutY="110.0" prefHeight="39.0" prefWidth="66.0" text="Parts">
+      <Label layoutX="35.0" layoutY="110.0" prefHeight="39.0" prefWidth="66.0" text="Parts" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="350.0" layoutX="606.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="561.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#005982" height="350.0" layoutX="606.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="561.0" />
       <TableView fx:id="productTable" layoutX="665.0" layoutY="150.0" prefHeight="244.0" prefWidth="470.0">
          <columns>
             <TableColumn fx:id="productIDColumn" prefWidth="75.0" text="Product ID" />
@@ -49,7 +50,7 @@
             <TableColumn fx:id="productPrice" prefWidth="157.0" text="Price/Cost Per Unit" />
          </columns>
       </TableView>
-      <Label layoutX="614.0" layoutY="112.0" prefHeight="39.0" prefWidth="95.0" text="Products">
+      <Label layoutX="614.0" layoutY="112.0" prefHeight="39.0" prefWidth="95.0" text="Products" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
