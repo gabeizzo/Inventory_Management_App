@@ -49,7 +49,7 @@ public class ModifyProductScreen implements Initializable {
      @throws IOException
      */
     public void modifyProductToFirstScreen(ActionEvent actionEvent) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Cancel will not update any new text input and returns to the main menu.\n Continue anyways?");
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Cancel will not update any new text input and returns to the main menu.\n\n Continue anyways?\n\n");
         Optional<ButtonType> result = alert.showAndWait();
 
         if(result.isPresent() && result.get() == ButtonType.OK) {

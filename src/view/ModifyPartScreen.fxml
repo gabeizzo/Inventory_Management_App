@@ -2,13 +2,15 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartScreen">
    <children>
-      <Label layoutX="32.0" layoutY="24.0" prefHeight="35.0" prefWidth="144.0" text="Modify Part">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#007faa" height="600.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Label layoutX="30.0" layoutY="44.0" prefHeight="46.0" prefWidth="209.0" text="Modify Part" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="30.0" />
          </font>
       </Label>
       <Button fx:id="saveModifyButton" layoutX="435.0" layoutY="423.0" mnemonicParsing="false" onAction="#saveModifyPart" prefHeight="35.0" prefWidth="88.0" text="Save">
@@ -19,25 +21,43 @@
          <font>
             <Font size="14.0" />
          </font></Button>
-      <RadioButton fx:id="inHouseRadioButton" layoutX="252.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="In-House">
+      <RadioButton fx:id="inHouseRadioButton" layoutX="252.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="In-House" textFill="WHITE">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
          <toggleGroup>
             <ToggleGroup fx:id="partSourceToggle" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="outsourcedRadioButton" layoutX="386.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="Outsourced" toggleGroup="$partSourceToggle">
+      <RadioButton fx:id="outsourcedRadioButton" layoutX="386.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioButtonSelected" text="Outsourced" textFill="WHITE" toggleGroup="$partSourceToggle">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </RadioButton>
-      <Label fx:id="partIDLabel" layoutX="84.0" layoutY="134.0" text="ID" />
-      <Label fx:id="partNameLabel" layoutX="84.0" layoutY="178.0" prefHeight="18.0" prefWidth="51.0" text="Name" />
-      <Label fx:id="partStockLabel" layoutX="84.0" layoutY="222.0" prefHeight="18.0" prefWidth="109.0" text="Stock" />
-      <Label fx:id="partPriceLabel" layoutX="84.0" layoutY="268.0" text="Price/Cost" />
-      <Label fx:id="partMaxLabel" layoutX="84.0" layoutY="315.0" text="Max" />
-      <Label fx:id="partMachineIDLabel" layoutX="84.0" layoutY="362.0" text="Machine ID" />
+      <Label fx:id="partIDLabel" layoutX="84.0" layoutY="134.0" text="ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="partNameLabel" layoutX="84.0" layoutY="178.0" prefHeight="18.0" prefWidth="51.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="partStockLabel" layoutX="84.0" layoutY="222.0" prefHeight="18.0" prefWidth="109.0" text="Stock" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="partPriceLabel" layoutX="84.0" layoutY="268.0" text="Price/Cost" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="partMaxLabel" layoutX="84.0" layoutY="315.0" text="Max" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="partMachineIDLabel" layoutX="84.0" layoutY="362.0" text="Machine ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
       <TextField fx:id="partIDTxt" editable="false" layoutX="236.0" layoutY="130.0" promptText="Auto-Gen Disabled" />
       <TextField fx:id="partNameTxt" layoutX="236.0" layoutY="174.0" />
       <TextField fx:id="partStockTxt" layoutX="236.0" layoutY="218.0" />
@@ -45,6 +65,9 @@
       <TextField fx:id="partMaxTxt" layoutX="236.0" layoutY="311.0" />
       <TextField fx:id="partMachineIDTxt" layoutX="236.0" layoutY="355.0" />
       <TextField fx:id="partMinTxt" layoutX="516.0" layoutY="311.0" />
-      <Label fx:id="partMinLabel" layoutX="461.0" layoutY="315.0" text="Min" />
+      <Label fx:id="partMinLabel" layoutX="461.0" layoutY="315.0" text="Min" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>
